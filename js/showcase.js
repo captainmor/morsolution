@@ -64,9 +64,9 @@ function sendEmail() {
   var msg = $("#Message").val();
 
   Email.send({
-    SecureToken: "d6c4ebac-7cb8-4efb-88f3-fb7e9f60e00b",
-    To: 'morulingjames89@gmail.com',
-    From: "enquirer@morsolution.com",
+    SecureToken: "bd9123a0-0787-4283-93bb-78fc8b482354",
+    To: 'onduita@gmail.com',
+    From: "morulingjames89@gmail.com",
     Subject: "Test Email",
     Body: "<html><h2>Enquiry from morsolution</h2><strong>Name :" + name + "</strong><br></br><strong> Email:" + email + "</strong><strong> Phone:" + phone + "</strong><br></br><em>" + message + "</em></html>"
   }).then(
