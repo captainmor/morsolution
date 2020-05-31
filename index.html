@@ -419,11 +419,11 @@
             </h1>
           </div>
           <div class="column is-8 is-offset-2">
-            <form action="https://formspree.io/email@example.com" method="POST">
+            <form method="POST">
               <div class="field">
                 <label class="label">Name</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="text" placeholder="Ex. Jane Smith" name="Name" />
+                  <input class="input" type="text" placeholder="Ex. Jane Smith" id="Name" />
                   <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                   </span>
@@ -432,21 +432,30 @@
               <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left">
-                  <input class="input" type="email" placeholder="Ex. hello@arctheme.com" name="Email" />
+                  <input class="input" type="email" placeholder="Ex. hello@arctheme.com" id="Email" />
                   <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                   </span>
                 </div>
               </div>
               <div class="field">
+                <label class="label">Phone No</label>
+                <div class="control has-icons-left">
+                  <input class="input" type="tel" placeholder="0123456789" id="Phone" />
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-phone"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="field">
                 <label class="label">Message</label>
                 <div class="control">
-                  <textarea class="textarea" placeholder="Textarea" name="Message"></textarea>
+                  <textarea class="textarea" placeholder="Textarea" id="Message"></textarea>
                 </div>
               </div>
               <div class="field">
                 <div class="control ">
-                  <button class="button submit-button">
+                  <button id="btnSendEmail" class="button submit-button" onclick="sendEmail()">
                     Submit&nbsp;&nbsp;
                     <i class="fas fa-paper-plane"></i>
                   </button>
@@ -474,6 +483,7 @@
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="./js/showcase.js"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
