@@ -65,6 +65,7 @@ function sendEmail() {
 
   Email.send({
     SecureToken: "bd9123a0-0787-4283-93bb-78fc8b482354",
+    Host: "smtp.gmail.com",
     To: 'onduita@gmail.com',
     From: "morulingjames89@gmail.com",
     Subject: "Test Email",
